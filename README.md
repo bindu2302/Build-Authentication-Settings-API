@@ -36,15 +36,16 @@ This is a Node.js + Express backend application that provides **user authenticat
 ## 📁 Project Structure
 
 team-backend/
-├── config/           # Database connection
-├── controllers/      # Business logic
-├── middleware/       # JWT authentication middleware
-├── models/           # Mongoose schemas
-├── routes/           # Express route handlers
-├── .env              # Environment variables (excluded from version control)
-├── server.js         # Application entry point
-├── package.json      # Project metadata and dependencies
-└── README.md         # Project documentation
+│
+├── config/ # Database connection
+├── controllers/ # Business logic
+├── middleware/ # Auth middleware
+├── models/ # Mongoose models
+├── routes/ # Express route handlers
+├── .env # Environment variables
+├── server.js # App entry point
+├── package.json
+└── README.md
 
 
 
