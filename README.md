@@ -1,10 +1,10 @@
-# 🛠 Team Productivity Backend API
+# 🚀 Team Productivity Backend API
 
-This is the backend system for a Team Productivity Platform, built with **Node.js**, **Express**, and **MongoDB**. It provides user authentication, profile management, user preferences, and dashboard summary endpoints.
+This is a Node.js + Express backend application that provides **user authentication**, **user preferences**, and **dashboard summary** features, using **MongoDB** and **JWT**.
 
 ---
 
-## 🚀 Tech Stack
+## 🛠 Tech Stack
 
 - **Node.js**
 - **Express**
@@ -14,26 +14,39 @@ This is the backend system for a Team Productivity Platform, built with **Node.j
 - **Joi** – Input validation
 - **dotenv** – Environment variables
 
-## Setup
-```bash
-git clone <repo-url>
-cd backend
-npm install
-create a `.env` file with Mongo URI & JWT secret
-npm start
+---
 
+## ⚙️ Setup Instructions
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-repo-url>
+   cd team-backend
+2. **Install dependencies**
+   npm install
+3. **Create a .env file and add the following:**
+   MONGO_URI=your_mongodb_connection_string
+   JWT_SECRET=your_secret_key
+4. **Start the server**
+   npm start
+5. **The server runs at:**
+   http://localhost:5000
+
+
+📁 Project Structure
 
 team-backend/
 │
-├── config/ # Database connection
-├── controllers/ # Business logic
-├── middleware/ # Auth middleware
-├── models/ # Mongoose models
-├── routes/ # Express route handlers
-├── .env # Environment variables
-├── server.js # App entry point
-├── package.json
-└── README.m
+├── config/              # Database connection
+├── controllers/         # Business logic
+├── middleware/          # JWT authentication middleware
+├── models/              # Mongoose schemas
+├── routes/              # Express route handlers
+├── .env                 # Environment variables (excluded from version control)
+├── server.js            # Application entry point
+├── package.json         # Project metadata and dependencies
+└── README.md            # Project documentation
+
 
 
 ---
@@ -80,48 +93,26 @@ All protected routes require a valid JWT token in the `Authorization` header:
 
 Authorization: Bearer <your_token>
 
----
 
-## ⚙️ Setup Instructions
-
-1. **Clone the repository**
-   ```bash
-   git clone <your-repo-url>
-   cd team-backend
-
-2. Install dependencies
-npm install
-
-3. Create .env file
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-
-4. Start the server
-npm start
-
-5. Server runs on:
-http://localhost:5000
-
-
- Features Completed
+ ✅ Features Completed
  User registration and login
 
  JWT authentication
 
- Profile fetch and update
+ Fetch and update user profile
 
- Preference save and fetch
+ Save and fetch preferences
 
  Dashboard summary endpoint
 
- Modular structure (routes/controllers/models)
+ Modular folder structure (routes, models, controllers)
 
- Secure .env usage
+ Secure configuration with .env
 
- Input validation using Joi
+ Input validation with Joi
 
 
-Screenshots:
+### 📸Screenshots:
 1. Terminal Output: https://prnt.sc/lZdPxMYY2tug
 2. Postman request(For register): https://prnt.sc/0hggPpOMl5eb 
 3. Postman request(For login): https://prnt.sc/kwu_s-4wWUhU
