@@ -24,9 +24,9 @@ This is a Node.js + Express backend application that provides **user authenticat
    cd team-backend
 2. **Install dependencies**
    npm install
-3. **Create a .env file and add the following:**
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_secret_key
+3. **Create a .env file and add following:**
+   MONGO_URI = your_mongodb_connection_string
+   JWT_SECRET = your_secret_key
 4. **Start the server**
    npm start
 5. **The server runs at:**
@@ -37,14 +37,14 @@ This is a Node.js + Express backend application that provides **user authenticat
 
 ```plaintext
 team-backend/
-├── config/           # Database connection
-├── controllers/      # Business logic
+├── config/           # The Database connection
+├── controllers/      # The Business logic
 ├── middleware/       # JWT authentication middleware
-├── models/           # Mongoose schemas
+├── models/           # Mongoose schema
 ├── routes/           # Express route handlers
-├── .env              # Environment variables (excluded from version control)
+├── .env              # Environment variables (excluded from the version control)
 ├── server.js         # Application entry point
-├── package.json      # Project metadata and dependencies
+├── package.json      # The Project metadata & dependencies
 └── README.md         # Project documentation
 ```
 
@@ -57,7 +57,7 @@ team-backend/
 ### 🔐 Authentication
 
 - `POST /api/register`  
-  Register a new user with email, name, and password
+  Register a new user with the email, name, and password
 
 - `POST /api/login`  
   Authenticate user and return JWT token
@@ -83,13 +83,13 @@ team-backend/
 ### 📊 Dashboard Summary
 
 - `GET /api/dashboard-summary`  
-  Return dummy data for teams, projects, and notifications *(Protected route)*
+  Return the dummy data for teams, projects, and notifications thr
 
 ---
 
 ## 🔐 JWT Auth Middleware
 
-All protected routes require a valid JWT token in the `Authorization` header:
+All protected routes are require a valid JWT token in the `Authorization` header:
 
 
 Authorization: Bearer <your_token>
